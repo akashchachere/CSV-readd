@@ -1,9 +1,7 @@
-# import Package Pandas
 import pandas as pd
 
-# Excel File
 a = r'C:\\Users\\sony\\Desktop\\Excel Sheet\\Example.xlsx'
-# ExcelFile Read
+
 df = pd.read_excel(a, 0)
 c = pd.ExcelFile(a)
 list = []
