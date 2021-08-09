@@ -1,6 +1,6 @@
 import pandas as pd
 
-a = r'C:\\Users\\sony\\Desktop\\Excel Sheet\\Example.xlsx'
+a = r'*.xlsx'
 
 df = pd.read_excel(a, 0)
 c = pd.ExcelFile(a)
@@ -12,5 +12,5 @@ for sheet in c.sheet_names:
     d = pd.concat((list))
 
 
-    d.to_csv('C:\\Users\\sony\\Desktop\\Excel Sheet\\AllSheet.csv', encoding='utf-8', index=True, header=True)
+    d.to_csv('*.csv', encoding='utf-8', index=True, header=True)
     print(d)
